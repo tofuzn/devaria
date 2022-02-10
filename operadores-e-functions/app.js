@@ -47,6 +47,7 @@ readLine.question('Por favor, digite um número: ', numero1 => {
                             case '+' :
                                 console.log(`Operador escolhido: ${operador}`);
                                 console.log(`${n1} + ${n2} = ${n1 + n2}`);
+                                // break -> estou usando process.exit apenas para nao precisar dar ctrl + c no terminal pra finalizar o programa
                                 process.exit(0);
                             case '-' :
                                 console.log(`Operador escolhido: ${operador}`);
