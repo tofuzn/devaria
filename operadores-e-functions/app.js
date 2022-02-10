@@ -9,7 +9,6 @@ const validarNumero = numero => {
     const numeroValidado = Number.parseFloat(numero);
     if(!numeroValidado) {
         console.log("O número digitado não é válido!");
-        process.exit(1);
     } else {
         return numeroValidado;
     }
@@ -26,7 +25,7 @@ const validarOperador = operadorValidado => {
             return operadorValidado;
         default :
             console.log('Operador não é válido!');
-            process.exit(1);
+            return null;
     }
 }
 
