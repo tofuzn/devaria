@@ -64,7 +64,8 @@ readLine.question('Por favor, digite um número: ', numero1 => {
                                 console.log(`Operador escolhido: ${operador}`);
                                 console.log(`${n1} % ${n2} = ${n1 % n2}`);
                                 process.exit(0);
-                            
+                            // como já esta sendo validado anteriormente, não há a necessidade de usar o default aqui 
+                            // pois nesse caso, nunca vai receber um input diferente dos case acima!!
                         }
                     }
                 })
